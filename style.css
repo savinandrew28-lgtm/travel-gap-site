@@ -1,0 +1,313 @@
+/* Общий визуальный язык тревел-трека: тот же, что в src/TravelPin.tsx —
+   Playfair Display + Inter, тёплый песочный акцент, тёмный текстовый фон.
+   Сайт существует не как витрина, а как посадочная страница под пины и
+   регистрационное требование "сайт обязателен" у Admitad/Discover Cars —
+   поэтому оформление совпадает с пинами: переход с Pinterest не выглядит
+   переходом на чужой бренд. */
+
+:root {
+  --cream: #FBF7F0;
+  --sand: #E8B04B;
+  --deep: #12100E;
+  --ink: #2A2723;
+  --muted: #6B6459;
+  --line: #E7DFCF;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Inter', -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, .brand {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  color: var(--deep);
+  margin: 0 0 0.4em;
+}
+
+a { color: var(--deep); }
+
+header.site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 6vw;
+  border-bottom: 1px solid var(--line);
+}
+
+header.site .brand {
+  font-size: 26px;
+  text-decoration: none;
+}
+
+header.site nav a {
+  margin-left: 28px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+/* Заголовок и навигация с 2026-08-09 несут 3 пункта (было 2) — на узком
+   экране "About" улетал за край кадра, недостижимый. Основной трафик с
+   Pinterest мобильный, эта поломка реальна, не гипотетическая. */
+@media (max-width: 480px) {
+  header.site {
+    flex-wrap: wrap;
+    row-gap: 12px;
+    padding: 20px 5vw;
+  }
+
+  header.site .brand {
+    font-size: 22px;
+  }
+
+  header.site nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header.site nav a {
+    margin-left: 0;
+    font-size: 14px;
+  }
+}
+
+.hero {
+  position: relative;
+  height: 62vh;
+  min-height: 380px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero .scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(18,16,14,0.15) 0%, rgba(18,16,14,0.75) 100%);
+}
+
+.hero .content {
+  position: relative;
+  padding: 40px 6vw;
+  color: var(--cream);
+  max-width: 760px;
+}
+
+.hero .eyebrow {
+  display: inline-block;
+  background: var(--sand);
+  color: var(--deep);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 2px;
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 5vw, 56px);
+  color: var(--cream);
+  line-height: 1.05;
+}
+
+.hero p {
+  font-size: 19px;
+  color: #EFE6D2;
+  max-width: 60ch;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 6vw 80px;
+}
+
+.stops {
+  list-style: none;
+  margin: 32px 0;
+  padding: 0;
+  counter-reset: stop;
+}
+
+.stops li {
+  counter-increment: stop;
+  display: flex;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.stops li::before {
+  content: counter(stop);
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 28px;
+  color: var(--sand);
+  min-width: 34px;
+}
+
+.stops .name {
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.stops .note {
+  color: var(--muted);
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.stops .stop-photo {
+  width: 84px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .stops .stop-photo { width: 64px; height: 64px; }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.card {
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.card .card-body {
+  padding: 18px 20px;
+}
+
+.card .eyebrow-sm {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--sand);
+  text-transform: uppercase;
+}
+
+.card h3 {
+  font-size: 21px;
+  margin: 6px 0 0;
+}
+
+.photo-credit {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+.photo-credit a { color: var(--muted); }
+
+/* CTA-блок под живую партнёрскую ссылку. Тёплый акцентный фон, но БЕЗ
+   кричащей рекламной рамки — тон должен остаться «мы сами так бронируем»,
+   а не «баннер». Дисклоуз — отдельной строкой прямо под кнопкой, не только
+   в футере, иначе ссылка выглядит непрозрачной. */
+.booking-cta {
+  margin: 36px 0;
+  padding: 26px 28px;
+  background: var(--surface, #fff);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--sand);
+  border-radius: 8px;
+}
+.booking-cta p:first-child { margin-top: 0; }
+.booking-cta .cta-button {
+  display: inline-block;
+  background: var(--deep);
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px 22px;
+  border-radius: 6px;
+  margin: 6px 0 10px;
+}
+/* Мини-сравнение внутри CTA-блока — по исследованию (см. CHANNEL.md):
+   in-content links + comparison-style block конвертят лучше баннера,
+   и это тот же контент, что и остальной гайд, а не рекламная вставка. */
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 20px 0;
+}
+.compare-col {
+  padding: 16px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.compare-col.without {
+  background: rgba(0,0,0,0.03);
+  color: var(--muted);
+}
+.compare-col.with {
+  background: rgba(232,176,74,0.12);
+  border: 1px solid rgba(232,176,74,0.35);
+  color: var(--ink);
+}
+.compare-col .compare-label {
+  display: block;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.compare-col.without .compare-label { color: var(--muted); }
+.compare-col.with .compare-label { color: #9a6d0e; }
+.compare-col ul { margin: 0; padding-left: 18px; }
+.compare-col li { margin-bottom: 4px; }
+
+.booking-cta .cta-disclose {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0;
+}
+
+footer.site {
+  text-align: center;
+  padding: 40px 6vw;
+  color: var(--muted);
+  font-size: 13px;
+  border-top: 1px solid var(--line);
+}

@@ -1,0 +1,72 @@
+{
+  "sesimbra.jpg": {
+    "photographer": "Jeffrey Eisen",
+    "url": "https://www.pexels.com/photo/scenic-beachfront-in-sesimbra-portugal-34825219/",
+    "alt": "Beautiful beach scene in Sesimbra, Portugal with vibrant coastline and hillside buildings."
+  },
+  "comporta.jpg": {
+    "photographer": "H Matias",
+    "url": "https://www.pexels.com/photo/footprints-on-shore-10474698/",
+    "alt": "Peaceful sandy shore with footprints and gentle waves at sunset in Comporta, Portugal."
+  },
+  "vila-nova-de-milfontes.jpg": {
+    "photographer": "Nils Rotura",
+    "url": "https://www.pexels.com/photo/vila-nova-de-milfontes-coastal-panorama-37101579/",
+    "alt": "Scenic view of Vila Nova de Milfontes' beach and bridge under a sunny sky."
+  },
+  "odeceixe.jpg": {
+    "photographer": "Rodrigo Curi",
+    "url": "https://www.pexels.com/photo/odeceixe-mar-beach-in-portugal-from-a-birds-eye-view-20117919/",
+    "alt": "A breathtaking aerial shot of Praia de Odeceixe with its picturesque coastline and vibrant village."
+  },
+  "lagos-pt.jpg": {
+    "photographer": "Rick Bossenbroek",
+    "url": "https://www.pexels.com/photo/photo-of-a-seashore-with-rocks-14563259/",
+    "alt": "A stunning view of the rocky coastline in Lagos, Portugal, showcasing dramatic cliffs and turquoise waters."
+  },
+  "reykjavik.jpg": {
+    "photographer": "Stephen Leonardi",
+    "url": "https://www.pexels.com/photo/scenic-aerial-view-of-colorful-reykjavik-at-sunset-29877239/",
+    "alt": "Aerial view of Reykjavik, Iceland, showcasing colorful houses and a stunning sunset."
+  },
+  "vik.jpg": {
+    "photographer": "Alec Doualetas",
+    "url": "https://www.pexels.com/photo/scenic-black-sand-beach-with-basalt-columns-31851519/",
+    "alt": "A breathtaking view of a black sand beach with rugged cliffs and basalt columns under a clear sky."
+  },
+  "hofn.jpg": {
+    "photographer": "Piotr Kowalonek",
+    "url": "https://www.pexels.com/photo/ice-on-the-beach-at-sunset-15264698/",
+    "alt": "Capture the captivating sunset over Iceland's ice beach at Höfn. A serene blend of icy shores and golden light."
+  },
+  "egilsstadir.jpg": {
+    "photographer": "Brianna Eisman",
+    "url": "https://www.pexels.com/photo/scenic-autumn-landscape-in-iceland-s-countryside-29084582/",
+    "alt": "Breathtaking view of Iceland's autumn landscape with river and mountains. Ideal travel destination."
+  },
+  "akureyri.jpg": {
+    "photographer": "X1ntao ZHOU",
+    "url": "https://www.pexels.com/photo/panoramic-view-of-akureyri-with-snowcapped-mountains-32636533/",
+    "alt": "Serene aerial view of Akureyri, Iceland featuring snowcapped mountains and a peaceful harbor."
+  },
+  "inverness.jpg": {
+    "photographer": "Sinitta Leunen",
+    "url": "https://www.pexels.com/photo/brown-and-white-concrete-building-near-body-of-water-5013704/"
+  },
+  "applecross-stop.jpg": {
+    "photographer": "Adrien Olichon",
+    "url": "https://www.pexels.com/photo/a-road-on-the-mountain-13364678/"
+  },
+  "ullapool.jpg": {
+    "photographer": "Petra Vajdova",
+    "url": "https://www.pexels.com/photo/seals-on-the-coast-7341107/"
+  },
+  "durness.jpg": {
+    "photographer": "Michał Robak",
+    "url": "https://www.pexels.com/photo/serene-scottish-beach-with-rocky-cliffs-and-waves-34638802/"
+  },
+  "johnogroats.jpg": {
+    "photographer": "Clément Proust",
+    "url": "https://www.pexels.com/photo/duncansby-stacks-en-ecosse-paysage-de-fallaise-dans-la-mer-14713776/"
+  }
+}
