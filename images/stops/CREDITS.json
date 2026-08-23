@@ -68,5 +68,105 @@
   "johnogroats.jpg": {
     "photographer": "Clément Proust",
     "url": "https://www.pexels.com/photo/duncansby-stacks-en-ecosse-paysage-de-fallaise-dans-la-mer-14713776/"
+  },
+  "split.jpg": {
+    "photographer": "Ken Jacobsen",
+    "url": "https://www.pexels.com/photo/arched-ruins-in-historic-split-croatia-35804022/",
+    "alt": "Sunlit Roman architectural ruins in Split, showcasing ancient arches and stonework."
+  },
+  "omis.jpg": {
+    "photographer": "Dejana Popovici",
+    "url": "https://www.pexels.com/photo/scenic-view-of-omis-with-river-and-mountains-38695602/",
+    "alt": "A picturesque view of Omiš, Croatia showcasing red rooftops, a river, and lush mountains."
+  },
+  "dubrovnik-stop.jpg": {
+    "photographer": "Diego F. Parra",
+    "url": "https://www.pexels.com/photo/old-town-of-dubrovnik-15552997/",
+    "alt": "Stunning aerial capture of Dubrovnik's Old Town and majestic Adriatic Sea coastline."
+  },
+  "kristiansund.jpg": {
+    "photographer": "Mario Vogt",
+    "url": "https://www.pexels.com/photo/aerial-view-of-coastal-village-and-harbor-34072120/",
+    "alt": "Stunning aerial view capturing a coastal village with a harbor and green landscape."
+  },
+  "atlantic-road.jpg": {
+    "photographer": "Barnabas Davoti",
+    "url": "https://www.pexels.com/photo/the-storseisundet-bridge-in-norway-9246895/",
+    "alt": "Scenic view of Storseisundet Bridge on Norway's iconic Atlantic Ocean Road."
+  },
+  "molde.jpg": {
+    "photographer": "Pixabay",
+    "url": "https://www.pexels.com/photo/white-mountains-under-blue-sky-358581/",
+    "alt": "A scenic winter view of a Norwegian town beneath snowy mountains reflecting in a fjord."
+  },
+  "andalsnes.jpg": {
+    "photographer": "Nils R",
+    "url": "https://www.pexels.com/photo/a-view-of-a-mountain-range-with-a-town-in-the-middle-28271729/",
+    "alt": "Breathtaking view of snow-capped mountains and a tranquil settlement in Åndalsnes, Norway."
+  },
+  "trollstigen.jpg": {
+    "photographer": "Johannes Beckmann",
+    "url": "https://www.pexels.com/photo/curved-road-up-the-mountain-13470682/",
+    "alt": "A winding mountain road enveloped in dense twilight fog, creating a moody and mysterious atmosphere."
+  },
+  "kranjska-gora.jpg": {
+    "photographer": "Vladimir Srajber",
+    "url": "https://www.pexels.com/photo/winter-landscape-in-kranjska-gora-slovenia-35565954/",
+    "alt": "Stunning winter view of Kranjska Gora's mountains and forest."
+  },
+  "vrsic-pass.jpg": {
+    "photographer": "Oskar Gross",
+    "url": "https://www.pexels.com/photo/winding-mountain-road-with-motorcyclists-38745623/",
+    "alt": "Scenic view of a winding mountain road with motorcycles and lush greenery under clear skies."
+  },
+  "trenta.jpg": {
+    "photographer": "Krivec Ales",
+    "url": "https://www.pexels.com/photo/mountain-ranges-under-cloudy-sky-551850/",
+    "alt": "Hiker exploring rugged peaks of the Slovenian Alps under a cloudy sky."
+  },
+  "bovec.jpg": {
+    "photographer": "Philipp Schwarz",
+    "url": "https://www.pexels.com/photo/lake-in-canyon-15835114/",
+    "alt": "A breathtaking view of a turquoise river winding through a rocky canyon in Bovec, Slovenia."
+  },
+  "kobarid.jpg": {
+    "photographer": "Jiri Ikonomidis",
+    "url": "https://www.pexels.com/photo/majestic-soca-mountain-landscape-at-sunset-28575783/",
+    "alt": "Stunning view of Soča mountains in Slovenia with sunset glow, capturing nature's tranquility."
+  },
+  "killarney.jpg": {
+    "photographer": "Oleksandr Kobuta",
+    "url": "https://www.pexels.com/photo/tranquil-lake-view-in-killarney-national-park-33867756/",
+    "alt": "Serene view of a lake surrounded by lush green hills in Killarney National Park, Ireland."
+  },
+  "dingle.jpg": {
+    "photographer": "Anna Lupa",
+    "url": "https://www.pexels.com/photo/scenic-view-of-dingle-harbor-with-colorful-boats-37840227/",
+    "alt": "Charming Dingle Harbor in Ireland featuring colorful boats and picturesque village backdrop."
+  },
+  "slea-head.jpg": {
+    "photographer": "Donovan Kelly",
+    "url": "https://www.pexels.com/photo/stunning-coastal-landscape-of-ireland-s-dingle-peninsula-36709090/",
+    "alt": "Breathtaking view of Slea Head Beach and rugged cliffs along Ireland's Dingle Peninsula coastline."
+  },
+  "dunquin.jpg": {
+    "photographer": "Daniel Zbroja",
+    "url": "https://www.pexels.com/photo/sea-and-coastline-at-dusk-5005567/",
+    "alt": "Stunning view of Dunquin Pier at sunset with serene waters and dramatic cliffs in County Kerry."
+  },
+  "ston.jpg": {
+    "photographer": "Artūras Kokorevas",
+    "url": "https://www.pexels.com/photo/gothic-castle-with-flag-10364100/",
+    "alt": "Beautiful blossoming trees in front of the historic Ston wall on a sunny day in Croatia."
+  },
+  "makarska.jpg": {
+    "photographer": "Patrik Balažinec",
+    "url": "https://www.pexels.com/photo/palm-tree-by-church-18642964/",
+    "alt": "Serene view of a church with palm tree and steps in Makarska, Croatia, against a mountainous backdrop."
+  },
+  "gallarus.jpg": {
+    "photographer": "Dahlia E. Akhaine",
+    "url": "https://www.pexels.com/photo/aerial-view-of-county-kerry-coastline-at-dusk-38545195/",
+    "alt": "Breathtaking aerial shot of County Kerry's coastline with historic ruins and stunning sea view."
   }
 }
