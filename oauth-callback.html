@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OAuth callback | Travel Gap</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <a class="brand" href="index.html">Travel Gap</a>
+</header>
+
+<main style="padding-top: 60px; max-width: 640px;">
+  <h1>Pinterest authorization</h1>
+  <p>This page isn't part of the site's content. It only exists so Pinterest has somewhere to send the authorization code after you approve access.</p>
+
+  <div id="result" style="margin-top:28px; padding:20px; border:1px solid var(--line); border-radius:8px;"></div>
+
+  <p style="margin-top:24px;"><a href="index.html">← Back to Travel Gap</a></p>
+</main>
+
+<footer class="site">
+  Travel Gap. Road trip route guides. · <a href="privacy-policy.html">Privacy</a>
+</footer>
+
+<script>
+  var params = new URLSearchParams(window.location.search);
+  var code = params.get("code");
+  var error = params.get("error");
+  var box = document.getElementById("result");
+  if (code) {
+    box.innerHTML =
+      "<p><strong>Code received.</strong> Copy the value below and paste it into the token-exchange step:</p>" +
+      "<p style=\"word-break:break-all; font-family:monospace; background:#f4f1ea; padding:12px; border-radius:6px;\">" +
+      code.replace(/</g, "&lt;") + "</p>" +
+      "<p>This code is short-lived, usually valid for a few minutes only.</p>";
+  } else if (error) {
+    box.innerHTML = "<p><strong>Authorization was not granted.</strong> Error: " +
+      error.replace(/</g, "&lt;") + "</p>";
+  } else {
+    box.innerHTML = "<p>No authorization code in the URL. This page is only useful right after Pinterest redirects here.</p>";
+  }
+</script>
+
+</body>
+</html>
